@@ -1,10 +1,7 @@
-import React from 'react';
-import CharacterCard from "./CharacterCard"
-
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
-export default function Character(props) {
+const Character = props => {
   // TODO: Add useState to track data from useEffect
   const [character, setCharacter] = useState();
   console.log(props);
@@ -21,10 +18,11 @@ export default function Character(props) {
     axios
       .get(`https://rickandmortyapi.com/api/character/${id}`)
       .then(
-        res => {
-        console.log("Success:", res);}
+        response => {
+            setCharacter(response.data)
+            console.log("Success:", response);}
       )
-      .catch(err => console.log("Error", err.response))
+      .catch(err => console.error("Error", err.response))
 
   }, [props.match.params.id]);
 
@@ -32,13 +30,30 @@ export default function Character(props) {
     return <div>Loading character information...</div>;
   }
 
-  const { id, name, status, species, type } = character;
+  const { name, status, species, type } = character;
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
-      <CharacterCard />
+      <div className="character-card">
+        <h2 className="character-name">{name}</h2>
+        <div className="character-status">
+          Status: <strong>{status}</strong>
+        </div>
+        <div className="character-species">
+          Species: <strong>{species}</strong>
+        </div>
+        <div className="character-type">
+          Type: <strong>{type}</strong>
+        </div>
+
+        {/* {stars.map(star => (
+          <div key={star} className="movie-star">
+            {star}
+        ))} */}
+        </div>
       
     </section>
   );
 }
+
+export default Character;
