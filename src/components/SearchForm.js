@@ -4,10 +4,32 @@ export default function SearchForm() {
   const [search, setSearch] = useState("");
   const [filteredCharacters, setFilteredCharacters] = useState([]);
 
+  useEffect(() => {
+    const filtered = characterInfo.filter(characterName => characterName.includes(search));
+    setFilteredCharacters(filtered);
+  }, [search]);
+
+  const handleChange = e => {
+    e.preventDefault();
+    setSearch(e.target.value);
+  };
+
  
   return (
     <section className="search-form">
-     // Add a search form here
+      <h1>Search Characters Here:</h1>
+      <input
+        type="text"
+        placeholder="Type Name Here"
+        onChange={handleChange}
+        value={search}
+      />
+      {filteredCharacters.map(characaterName => (
+        <div key={characaterName}>
+          {characterName}
+        </div>
+      ))}
+
     </section>
   );
 }
@@ -18,49 +40,3 @@ export default function SearchForm() {
 
 
 
-For Reference 
-
-import React, { useState, useEffect } from "react";
-import "./styles.css";
-
-const colors = [
-  "red",
-  "blue",
-  "dodgerblue",
-  "darkred",
-  "purple",
-  "green",
-  "grey"
-];
-
-export default function App() {
-  const [search, setSearch] = useState("");
-  const [filteredColors, setFilteredColors] = useState([]);
-
-  useEffect(() => {
-    const filtered = colors.filter(colorName => colorName.includes(search));
-    setFilteredColors(filtered);
-  }, [search]);
-
-  const handleChange = e => {
-    e.preventDefault();
-    setSearch(e.target.value);
-  };
-
-  return (
-    <div className="App">
-      <h1>The Magic of Filtering</h1>
-      <input
-        type="text"
-        placeholder="Start typing here to see the magic happen!"
-        onChange={handleChange}
-        value={search}
-      />
-      {filteredColors.map(colorName => (
-        <div key={colorName} style={{ color: colorName }}>
-          {colorName}
-        </div>
-      ))}
-    </div>
-  );
-}
