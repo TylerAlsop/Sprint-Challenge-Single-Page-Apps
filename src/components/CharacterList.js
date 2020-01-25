@@ -16,7 +16,7 @@ export default function CharacterList() {
       .get("https://rickandmortyapi.com/api/character/")
       .then(
         res => {
-          setCharacterInfo(res.data)
+          setCharacterInfo(res.data.results)
           console.log("Succesfully recieved data", res)
         }
       )
@@ -34,9 +34,9 @@ export default function CharacterList() {
     <section className="character-list">
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
       <div className="character-list">
-      {/* {characterInfo.map(character => (
+      {characterInfo.map(character => (
         <CharacterDetails key={character.id} character={character} />
-      ))} */}
+      ))}
     </div>
     </section>
   );
