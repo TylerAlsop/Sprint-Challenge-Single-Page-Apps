@@ -20,7 +20,7 @@ export default function SearchForm() {
       <h1>Search Characters Here:</h1>
       <input
         type="text"
-        placeholder="Type Name Here"
+        placeholder="Search Character Name Here"
         onChange={handleChange}
         value={search}
       />
