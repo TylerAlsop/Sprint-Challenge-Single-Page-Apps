@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer: First change for initial commit.
+> Answer: The main benefit of client side routing, in my opinion, is reducing loading time. Specifically the time it would take to load new pages by sending a request to the server to change pages and then loading it from the server each time. The initial time to load may be a little longer for client side routing, but that time will be made up quickly as the user begins to navigate the rest of the app/website.
 
 ## Project Set Up
 
