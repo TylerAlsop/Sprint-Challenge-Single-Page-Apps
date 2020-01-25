@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import { Badge } from 'reactstrap';
 import axios from "axios";
 
 export default function CharacterList() {
@@ -31,11 +32,11 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      {/* <h2>TODO: `array.map()` over your state here!</h2> */}
       <div className="character-list">
-      {characterInfo.map(character => (
+      {/* {characterInfo.map(character => (
         <CharacterDetails key={character.id} character={character} />
-      ))}
+      ))} */}
     </div>
     </section>
   );
@@ -45,9 +46,9 @@ function CharacterDetails({ character }) {
   const { name, status, species, type } = character;
   return (
     <div className="character-card">
-        <h2>{name}</h2>
+        <h2><Badge color="primary">{name}</Badge></h2>
         <div className="character-status">
-          Status: <em>{status}</em>
+          Status: <em><Badge color="warning">{status}</Badge></em>
         </div>
         <div className="character-species">
           Species: <strong>{species}</strong>
