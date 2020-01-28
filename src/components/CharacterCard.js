@@ -2,7 +2,7 @@ import React from "react";
 import { Badge } from 'reactstrap';
 
 
-function CharacterDetails({ character }) {
+function CharacterCard({ character }) {
   const { name, status, species, type } = character;
   return (
     <div className="character-card">
@@ -20,4 +20,4 @@ function CharacterDetails({ character }) {
   );
 }
 
-export default CharacterDetails
+export default CharacterCard
