@@ -12,7 +12,7 @@ export default function App() {
       <Header />
 
       <Route exact path="/" component={WelcomePage} />
-      <Route path="/character" component={CharacterList} />
+      <Route path="/character/" component={CharacterList} />
     </main>
   );
 }
