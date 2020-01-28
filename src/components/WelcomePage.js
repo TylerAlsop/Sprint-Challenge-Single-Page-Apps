@@ -1,6 +1,6 @@
 import React from "react";
 import CharacterList from "./CharacterList";
-// import SearchForm from "./SearchForm";
+import SearchForm from "./SearchForm";
 
 
 export default function WelcomePage() {
@@ -13,7 +13,7 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
-        {/* <SearchForm /> */}
+        <SearchForm />
         <CharacterList />
       </header>
     </section>
