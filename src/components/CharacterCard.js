@@ -8,13 +8,13 @@ function CharacterCard({ character }) {
     <div className="character-card">
         <h2><Badge color="primary">{name}</Badge></h2>
         <div className="character-status">
-          Status: <em><Badge color="warning">{status}</Badge></em>
+          <strong><Badge color="warning">Status: </Badge></strong> {status}
         </div>
         <div className="character-species">
-          Species: <strong>{species}</strong>
+          <strong>Species: </strong> {species}
         </div>
         <div className="character-type">
-          Type: <strong>{type}</strong>
+          <strong>Type: </strong> {type}
         </div>
     </div>
   );
