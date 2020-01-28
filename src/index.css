@@ -40,4 +40,12 @@ header h1 {
 
 .main-img-and-search-link {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.search-characters-button-div {
+  display: flex;
+  align-items: center;
+
 }

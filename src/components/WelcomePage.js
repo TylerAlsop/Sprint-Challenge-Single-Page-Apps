@@ -16,8 +16,9 @@ export default function WelcomePage() {
             src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
             alt="rick"
           />
-
-          <Link className="search-characters-button" to="/character/">Search List Of Characters</Link>
+          <div className="search-characters-button-div">
+            <Link className="search-characters-button" to="/character/">Search List Of Characters</Link>
+          </div>
 
         </div>
         
