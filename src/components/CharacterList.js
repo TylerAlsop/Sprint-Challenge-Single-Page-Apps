@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
-import { Badge } from 'reactstrap';
 import axios from "axios";
+import CharacterDetails from "./CharacterCard"
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -42,22 +42,5 @@ export default function CharacterList() {
   );
 }
 
-function CharacterDetails({ character }) {
-  const { name, status, species, type } = character;
-  return (
-    <div className="character-card">
-        <h2><Badge color="primary">{name}</Badge></h2>
-        <div className="character-status">
-          Status: <em><Badge color="warning">{status}</Badge></em>
-        </div>
-        <div className="character-species">
-          Species: <strong>{species}</strong>
-        </div>
-        <div className="character-type">
-          Type: <strong>{type}</strong>
-        </div>
-    </div>
-  );
-}
 
-// let characterInfo = characterInfoToUse;
+

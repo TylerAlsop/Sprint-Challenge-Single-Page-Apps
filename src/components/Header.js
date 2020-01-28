@@ -6,6 +6,7 @@ export default function Header() {
     <header className="ui centered">
       <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
       <WelcomePage />
+      {/* <Route path="/characterlist" component={CharacterList} /> */}
     </header>
   );
 }
