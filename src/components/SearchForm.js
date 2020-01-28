@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-export default function SearchForm() {
+export default function SearchForm(props) {
   const [search, setSearch] = useState("");
   const [filteredCharacters, setFilteredCharacters] = useState([]);
 
   useEffect(() => {
-    const filtered = characterInfo.filter(characterName => characterName.includes(search));
+    const filtered = props.filter(characterName => characterName.includes(search));
     setFilteredCharacters(filtered);
   }, [search]);
 

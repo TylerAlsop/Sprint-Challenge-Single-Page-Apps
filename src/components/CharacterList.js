@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import SearchForm from "./SearchForm";
+import SearchForm from "./SearchForm";
 import CharacterCard from "./CharacterCard";
 
 export default function CharacterList() {
@@ -34,7 +34,7 @@ export default function CharacterList() {
   return (
     <div>
       <section className="search-bar">
-        {/* <SearchForm /> */}
+        <SearchForm />
       </section>
       <section className="character-list">
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
