@@ -16,7 +16,7 @@ export default function SearchForm() {
 
  
   return (
-    <section className="search-form">
+    <div className="search-form">
       <h1>Search Characters Here:</h1>
       <input
         type="text"
@@ -30,7 +30,7 @@ export default function SearchForm() {
         </div>
       ))}
 
-    </section>
+    </div>
   );
 }
 
