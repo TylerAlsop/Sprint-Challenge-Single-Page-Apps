@@ -1,8 +1,5 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
-
-import CharacterList from "./CharacterList";
-// import SearchForm from "./SearchForm";
+import { Link } from "react-router-dom";
 
 
 export default function WelcomePage() {
@@ -22,10 +19,6 @@ export default function WelcomePage() {
 
         </div>
         
-
-        
-        {/* <SearchForm /> */}
-        {/* <CharacterList /> */}
       </header>
     </section>
   );
