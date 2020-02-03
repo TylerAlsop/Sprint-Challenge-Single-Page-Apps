@@ -46,9 +46,7 @@ export default function CharacterList() {
     </div>
     </section>
     </div>
-    
   );
 }
-
 
 
