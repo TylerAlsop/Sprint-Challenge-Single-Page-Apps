@@ -4,6 +4,8 @@ import axios from "axios";
 // import SearchForm from "./SearchForm";
 import CharacterCard from "./CharacterCard";
 
+
+
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characterInfo, setCharacterInfo] = useState([]);
@@ -60,7 +62,6 @@ export default function CharacterList() {
             value={search}
           />
           <p>*Search Is Case Sensitive</p>
-
         </div>
       </section>
       <section className="character-list">
