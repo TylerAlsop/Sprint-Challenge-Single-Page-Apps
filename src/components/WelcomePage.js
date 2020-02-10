@@ -7,7 +7,7 @@ export default function WelcomePage() {
   return (
     <section className="welcome-page">
       <section>
-        <h1 className="lead">Welcome to the ultimate fan site!</h1>
+        <h2 className="welcome-message">Welcome to the ultimate fan site!</h2>
         <div className="main-img-and-search-link">
           <img
             className="main-img"
