@@ -24,8 +24,8 @@ export default function SearchForm() {
         onChange={handleChange}
         value={search}
       />
-      {filteredCharacters.map(characaterName => (
-        <div key={characaterName}>
+      {filteredCharacters.map(characterName => (
+        <div key={characterName}>
           {characterName}
         </div>
       ))}
