@@ -31,11 +31,13 @@ export default function CharacterList() {
 
   }, []);
 
+  ////////////////////////Search Form Function///////////////////
+
   const [search, setSearch] = useState("");
   const [filteredCharacters, setFilteredCharacters] = useState([]);
 
   useEffect(() => {
-    const filtered = characterInfo.filter(characterName => characterName.includes(search));
+    const filtered = characterInfo.filter(characterName => characterName.name.includes(search));
     setFilteredCharacters(filtered);
   }, [search]);
 
@@ -57,7 +59,7 @@ export default function CharacterList() {
             value={search}
           />
           {filteredCharacters.map(characterName => (
-            <div key={characterName}>
+            <div key={characterName.id}>
               {characterName}
             </div>
           ))}
