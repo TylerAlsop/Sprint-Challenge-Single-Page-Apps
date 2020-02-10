@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Jumbotron, Button } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 
 export default function WelcomePage() {
   return (
     <section className="welcome-page">
-      <Jumbotron>
+      <section>
         <h1 className="lead">Welcome to the ultimate fan site!</h1>
         <div className="main-img-and-search-link">
           <img
@@ -23,7 +23,7 @@ export default function WelcomePage() {
 
         </div>
         
-      </Jumbotron>
+      </section>
     </section>
   );
 }
