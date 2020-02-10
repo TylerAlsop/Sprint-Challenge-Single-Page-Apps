@@ -50,6 +50,10 @@ header h1 {
 
 }
 
+.search-characters-button {
+  color: black;
+}
+
 .search-input-field {
   width: 50%;
   height: 20px;

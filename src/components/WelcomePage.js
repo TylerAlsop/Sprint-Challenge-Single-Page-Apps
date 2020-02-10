@@ -16,7 +16,7 @@ export default function WelcomePage() {
           />
           <div className="lead">
             <Button color="primary">
-              <Link className="search-characters-button" to="/character/">Search List Of Characters</Link>
+              <Link className="search-characters-button" to="/character/" color="black">Search List Of Characters</Link>
             </Button>
             
           </div>
