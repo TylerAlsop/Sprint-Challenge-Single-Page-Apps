@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import SearchForm from "./SearchForm";
+import SearchForm from "./SearchForm";
 import CharacterCard from "./CharacterCard";
 
 
@@ -53,25 +53,10 @@ export default function CharacterList() {
     <div>
       <section className="search-bar">
           <div className="search-form">
-          <h1>Search Characters Here:</h1>
-          <input
-            className="search-input-field"
-            type="text"
-            placeholder="Search Character Name Here"
-            onChange={handleChange}
-            value={search}
-          />
-          <p>*Search Is Case Sensitive</p>
-        </div>
+            <h1>Search Characters Here:</h1>
+            <SearchForm key={characterInfo.id} characterInfo={characterInfo} />
+          </div>
       </section>
-      <section className="character-list">
-      {/* <h2>TODO: `array.map()` over your state here!</h2> */}
-      <div className="character-list">
-      {filteredCharacters.map(characterName => (
-        <CharacterCard key={characterName.id} character={characterName} />
-      ))}
-    </div>
-    </section>
     </div>
   );
 }
