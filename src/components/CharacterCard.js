@@ -20,4 +20,4 @@ function CharacterCard({ character }) {
   );
 }
 
-export default CharacterCard
+export default CharacterCard;

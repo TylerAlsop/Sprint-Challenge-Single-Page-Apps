@@ -53,24 +53,21 @@ export default function CharacterList() {
           <div className="search-form">
           <h1>Search Characters Here:</h1>
           <input
+            className="search-input-field"
             type="text"
             placeholder="Search Character Name Here"
             onChange={handleChange}
             value={search}
           />
-          {filteredCharacters.map(characterName => (
-            <div key={characterName.id}>
-              {characterName}
-            </div>
-          ))}
+          <p>*Search Is Case Sensitive</p>
 
         </div>
       </section>
       <section className="character-list">
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
       <div className="character-list">
-      {characterInfo.map(character => (
-        <CharacterCard key={character.id} character={character} />
+      {filteredCharacters.map(characterName => (
+        <CharacterCard key={characterName.id} character={characterName} />
       ))}
     </div>
     </section>

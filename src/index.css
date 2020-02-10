@@ -49,3 +49,8 @@ header h1 {
   align-items: center;
 
 }
+
+.search-input-field {
+  width: 50%;
+  height: 20px;
+}
