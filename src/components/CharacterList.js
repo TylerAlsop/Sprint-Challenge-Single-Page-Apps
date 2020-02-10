@@ -53,7 +53,7 @@ export default function CharacterList() {
     <div>
       <section className="search-bar">
           <div className="search-form">
-          <h1>Search Characters Here:</h1>
+          <h2>Search Characters Here:</h2>
           <input
             className="search-input-field"
             type="text"
