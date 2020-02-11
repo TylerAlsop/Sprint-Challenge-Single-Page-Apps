@@ -37,3 +37,35 @@ main {
 header h1 {
   text-align: center;
 }
+
+.main-img-and-search-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.search-characters-button-div {
+  display: flex;
+  align-items: center;
+
+}
+
+.search-input-field {
+  width: 50%;
+  height: 40px;
+}
+
+.search-characters-button-container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.character-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  width: 50%;
+}
