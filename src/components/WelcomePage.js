@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
+import CharacterList from "./CharacterList"
 
 
 export default function WelcomePage() {
@@ -15,14 +16,14 @@ export default function WelcomePage() {
             alt="rick"
           />
           <div className="lead">
-            <Button color="primary">
-              <Link className="search-characters-button" to="/character/" color="black">Search List Of Characters</Link>
+            <Button color="success">
+              <Link className="search-characters-button" to="/search/" color="black">Search List Of Characters</Link>
             </Button>
-            
           </div>
-
         </div>
-        
+      </section>
+      <section>
+        <CharacterList />
       </section>
     </section>
   );
