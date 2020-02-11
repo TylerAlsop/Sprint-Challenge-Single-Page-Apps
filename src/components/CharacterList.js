@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import SearchForm from "./SearchForm";
+import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
 import CharacterCard from "./CharacterCard";
 
 
@@ -36,6 +37,12 @@ export default function CharacterList() {
   return (
     <div>
       <section className="character-list">
+
+        <div className="search-characters-button-container">
+          <Button className="search-characters-button" color="success">
+            <Link className="search-characters-button-link" to="/characters/search/" color="black">Search List Of Characters</Link>
+          </Button>
+        </div>
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
         <div className="character-list">
           {characterInfo.map(characterName => (

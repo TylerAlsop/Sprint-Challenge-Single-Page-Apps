@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from 'reactstrap';
-import CharacterList from "./CharacterList"
 
 
 export default function WelcomePage() {
@@ -15,15 +14,12 @@ export default function WelcomePage() {
             src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
             alt="rick"
           />
-          <div className="lead">
-            <Button color="success">
-              <Link className="search-characters-button" to="/search/" color="black">Search List Of Characters</Link>
+          <div className="see-characters-button-container">
+            <Button className="see-characters-button" color="success">
+              <Link className="see-characters-button-link" to="/characters/" color="black">See List Of Characters</Link>
             </Button>
           </div>
         </div>
-      </section>
-      <section>
-        <CharacterList />
       </section>
     </section>
   );

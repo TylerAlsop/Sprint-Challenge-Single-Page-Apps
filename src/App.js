@@ -13,7 +13,8 @@ export default function App() {
       <Header />
 
       <Route exact path="/" component={WelcomePage} />
-      <Route path="/search/" component={SearchForm} />
+      <Route exact path="/characters/" component={CharacterList} />
+      <Route path="/characters/search/" component={SearchForm} />
     </main>
   );
 }
