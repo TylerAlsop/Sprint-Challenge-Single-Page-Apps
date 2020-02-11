@@ -39,9 +39,9 @@ export default function CharacterList() {
       <section className="character-list">
 
         <div className="search-characters-button-container">
-          <Button className="search-characters-button" color="success">
-            <Link className="search-characters-button-link" to="/characters/search/" color="black">Search List Of Characters</Link>
-          </Button>
+            <Link className="search-characters-button-link" to="/characters/search/" color="black">
+              <Button className="search-characters-button" color="success">Search List Of Characters</Button>
+            </Link>
         </div>
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
         <div className="character-list">

@@ -15,9 +15,9 @@ export default function WelcomePage() {
             alt="rick"
           />
           <div className="see-characters-button-container">
-            <Button className="see-characters-button" color="success">
-              <Link className="see-characters-button-link" to="/characters/" color="black">See List Of Characters</Link>
-            </Button>
+            <Link className="see-characters-button-link" to="/characters/" color="black">
+              <Button className="see-characters-button" color="success">See List Of Characters</Button>
+            </Link>
           </div>
         </div>
       </section>

@@ -50,10 +50,6 @@ header h1 {
 
 }
 
-.see-characters-button-link {
-  color: black;
-}
-
 .search-input-field {
   width: 50%;
   height: 40px;
@@ -62,10 +58,6 @@ header h1 {
 .search-characters-button-container {
   padding-top: 20px;
   padding-bottom: 40px;
-}
-
-.search-characters-button-link {
-  color: black;
 }
 
 .character-list {
